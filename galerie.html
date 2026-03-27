@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Gwenaël Ollivier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
+    <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li><li><a href="biographie.html">Biographie</a></li>
+      <li><a href="groupes.html">Groupes</a></li><li><a href="galerie.html">Galerie</a></li>
+      <li><a href="dates.html">Prochaines dates</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="label">Photos & Vidéos</div>
+      <h1>Galerie</h1>
+      <p>Instants de scène et coulisses</p>
+    </div>
+  </div>
+
+  <section class="galerie-section">
+    <div class="container">
+      <div class="galerie-tabs">
+        <button class="galerie-tab" data-tab="photo-grid">Photos</button>
+        <button class="galerie-tab" data-tab="video-grid">Vidéos</button>
+      </div>
+
+      <!-- Photos -->
+      <div class="photo-grid">
+        <div class="photo-grid-item"><img src="images/hero.jpg" alt="Gwenaël Ollivier au piano"></div>
+        <div class="photo-grid-item"><img src="images/bio-secondary.jpg" alt="Concert"></div>
+        <div class="photo-grid-item"><img src="images/galerie-rue.jpg" alt="Concert de rue"></div>
+        <div class="photo-grid-item"><img src="images/galerie-smoking.jpg" alt="Concert en smoking"></div>
+        <div class="photo-grid-item"><img src="images/galerie-portrait.jpg" alt="Portrait"></div>
+        <div class="photo-grid-item"><img src="images/sancocho.jpg" alt="Trio Sancocho"></div>
+        <div class="photo-grid-item"><img src="images/toucantoco.jpg" alt="Toucan Toco"></div>
+        <div class="photo-grid-item"><img src="images/zitzelyth.jpg" alt="ZitZelyth"></div>
+        <div class="photo-grid-item"><img src="images/controlzebre.jpg" alt="Control Zèbre"></div>
+      </div>
+
+      <!-- Vidéos -->
+      <div class="video-grid">
+        <div class="video-grid-item">
+          <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;">The Zonky's</p>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/oU6VevXHnFw" title="The Zonky's" allowfullscreen></iframe></div>
+        </div>
+        <div class="video-grid-item">
+          <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;">Trio Sancocho</p>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/5WGVitphDHI" title="Trio Sancocho" allowfullscreen></iframe></div>
+        </div>
+        <div class="video-grid-item">
+          <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;">The Django Retro Show</p>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/be0ktZg0sSM" title="The Django Retro Show" allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+    <img id="lightboxImg" src="" alt="Photo agrandie">
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Gwenaël Ollivier</div>
+        <nav class="footer-nav"><a href="biographie.html">Biographie</a><a href="groupes.html">Groupes</a><a href="galerie.html">Galerie</a><a href="dates.html">Prochaines dates</a><a href="contact.html">Contact</a></nav>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Gwenaël Ollivier — Tous droits réservés</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

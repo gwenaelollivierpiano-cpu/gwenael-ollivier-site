@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moritz Trio — Gwenaël Ollivier</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moritz Trio — Gwenaël Ollivier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
+</head>
 <body>
   <nav id="navbar"><div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
     <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks"><li><a href="index.html">Accueil</a></li><li><a href="biographie.html">Biographie</a></li><li><a href="groupes.html">Groupes</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="dates.html">Prochaines dates</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-  <div class="page-header"><div class="container"><div class="label">Trio</div><h1>Moritz Trio</h1><p>À venir…</p></div></div>
+  <div class="page-header"><div class="container"><div class="label">Trio</div><h1>Moritz Trio</h1><p>Jazz & Balkans</p></div></div>
   <section class="groupe-content"><div class="container">
     <a href="groupes.html" class="back-link">← Retour aux groupes</a>
-    <div style="text-align:center;padding:5rem 2rem;">
-      <p style="font-family:var(--font-title);font-size:1.4rem;font-style:italic;color:var(--text-muted);">Le contenu de cette page arrive bientôt.</p>
+    <div class="groupe-content-grid">
+      <div class="groupe-text">
+        <p>Moritz, trio jazz et balkan composé d'un piano, d'une contrebasse et d'un violon.</p>
+        <div class="audio-player">
+          <div class="audio-player-title">♪ Écouter Moritz Trio</div>
+          <div id="group-audio-player" data-folder="moritztrio"></div>
+        </div>
+      </div>
+      <div><div style="aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--bg3);font-size:5rem;color:var(--border2);">♫</div></div>
     </div>
   </div></section>
   <footer id="footer"><div class="container"><div class="footer-top"><div class="footer-logo">Gwenaël Ollivier</div><nav class="footer-nav"><a href="biographie.html">Biographie</a><a href="groupes.html">Groupes</a><a href="galerie.html">Galerie</a><a href="dates.html">Prochaines dates</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><p>© 2025 Gwenaël Ollivier</p></div></div></footer>
-  <script src="script.js"></script>
+  <script src="script.js"></script><script src="audio-player.js"></script>
 </body></html>

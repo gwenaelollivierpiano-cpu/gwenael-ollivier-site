@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jean Plume — Gwenaël Ollivier</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
 </head>
 <body>
   <nav id="navbar">
     <div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
     <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="biographie.html">Biographie</a></li>
-      <li><a href="groupes.html">Groupes</a></li>
-      <li><a href="galerie.html">Galerie</a></li>
-      <li><a href="dates.html">Prochaines dates</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Accueil</a></li><li><a href="biographie.html">Biographie</a></li>
+      <li><a href="groupes.html">Groupes</a></li><li><a href="galerie.html">Galerie</a></li>
+      <li><a href="dates.html">Prochaines dates</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -35,27 +32,30 @@
       <div class="groupe-content-grid">
         <div class="groupe-text">
           <p>Duo frais et créatif, Jean-Plume propose un voyage dans l'espace-temps, en musique. Du bal musette aux rythmes chaloupés, de la douce nostalgie au tressautement joyeux de vos épaules — un moment riche en saveurs !</p>
-
           <h3 style="font-family:var(--font-title);color:var(--gold);font-size:1.3rem;margin:2rem 0 1rem;font-weight:400;">Chanson Française</h3>
-          <p>Formule piano-chant en toute intimité. Plongez dans l'univers raffiné de la chanson française des années 30 à 50. Édith Piaf, Fréhel, Jean Sablon, Lucienne Boyer, Aznavour… Jean-Plume vous transporte dans l'élégance des cabarets parisiens, où la mélancolie se mêle à la joie de vivre.</p>
-
+          <p>Formule piano-chant en toute intimité. Édith Piaf, Fréhel, Jean Sablon, Lucienne Boyer, Aznavour… Jean-Plume vous transporte dans l'élégance des cabarets parisiens, où la mélancolie se mêle à la joie de vivre.</p>
           <h3 style="font-family:var(--font-title);color:var(--gold);font-size:1.3rem;margin:2rem 0 1rem;font-weight:400;">Swing</h3>
-          <p>Formule swing du duo au quartet — avec contrebasse, batterie ou clarinette au choix. Laissez-vous emporter par l'énergie vibrante du swing des années 1940, revisité avec authenticité et une touche de modernité. Idéal pour un festival ou toute fête privée.</p>
-
+          <p>Formule swing du duo au quartet. Laissez-vous emporter par l'énergie vibrante du swing des années 1940, revisité avec authenticité et une touche de modernité.</p>
           <h3 style="font-family:var(--font-title);color:var(--gold);font-size:1.3rem;margin:2rem 0 1rem;font-weight:400;">Toucan Toco</h3>
-          <p>Dans cette formule unique, Zéphyr et Cosima Ollivier complètent le groupe. Avec chant, piano, batterie, clarinette, contrebasse, flûte traversière — musique latine, jazz, chanson. Tout le monde joue de tout, l'ensemble est joyeux et étonnant !</p>
-
+          <p>Dans cette formule unique, Zéphyr et Cosima Ollivier complètent le groupe. Musique latine, jazz, chanson — tout le monde joue de tout, l'ensemble est joyeux et étonnant !</p>
+          <div class="audio-player">
+            <div class="audio-player-title">♪ Écouter Jean Plume</div>
+            <div id="group-audio-player" data-folder="jean-plume"></div>
+          </div>
           <div class="groupe-videos">
             <h3>Vidéos</h3>
-            <div class="video-embed">
-              <iframe src="https://www.youtube.com/embed/oU6VevXHnFw" title="Jean Plume" allowfullscreen></iframe>
-            </div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/96MTWEG6Lpo" title="Tant pis, tant mieux" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/bpnTu3nsILk" title="J'attendrai" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/Gtn_uI3-79M" title="When day is done" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/AkFtLL0Yvgs" title="Le dénicheur" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/Yjfbbm8uYJ8" title="Loin des sambas" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/dM8w8CGpn3g" title="Le feutre taupé" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/OT0sDCpAD_U" title="Parle moi d'autre chose" allowfullscreen></iframe></div>
           </div>
         </div>
-
         <div>
           <div class="groupe-photos">
-            <img src="https://static.wixstatic.com/media/b9bd98_1941ba9d120b405ea054a088f6f8f370~mv2.jpg" alt="Jean Plume chanson française">
+            <img src="https://static.wixstatic.com/media/b9bd98_1941ba9d120b405ea054a088f6f8f370~mv2.jpg" alt="Jean Plume">
             <img src="https://static.wixstatic.com/media/b9bd98_9b05d3b342404de0b211080303252e99~mv2.jpg" alt="Jean Plume swing">
             <img src="https://static.wixstatic.com/media/b9bd98_32dd624ae22f4fe982a12378e5d0f72e~mv2.jpg" alt="Jean Plume concert" class="photo-wide">
             <img src="https://static.wixstatic.com/media/b9bd98_806cbba2cba744be933162a61c5cc2ce~mv2.jpg" alt="Jean Plume">
@@ -66,21 +66,7 @@
     </div>
   </section>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-logo">Gwenaël Ollivier</div>
-        <nav class="footer-nav">
-          <a href="biographie.html">Biographie</a>
-          <a href="groupes.html">Groupes</a>
-          <a href="galerie.html">Galerie</a>
-          <a href="dates.html">Prochaines dates</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <div class="footer-bottom"><p>© 2025 Gwenaël Ollivier — Tous droits réservés</p></div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+  <footer id="footer"><div class="container"><div class="footer-top"><div class="footer-logo">Gwenaël Ollivier</div><nav class="footer-nav"><a href="biographie.html">Biographie</a><a href="groupes.html">Groupes</a><a href="galerie.html">Galerie</a><a href="dates.html">Prochaines dates</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><p>© 2025 Gwenaël Ollivier</p></div></div></footer>
+  <script src="script.js"></script><script src="audio-player.js"></script>
 </body>
 </html>

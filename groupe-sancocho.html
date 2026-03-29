@@ -4,6 +4,7 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trio Sancocho — Gwenaël Ollivier</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
 </head>
 <body>
   <nav id="navbar">
@@ -16,7 +17,7 @@
     </ul>
   </nav>
   <div class="groupe-hero">
-    <img src="images/sancocho.jpeg" alt="Trio Sancocho">
+    <img src="images/sancocho.jpg" alt="Trio Sancocho">
     <div class="groupe-hero-overlay"></div>
     <div class="groupe-hero-content">
       <div class="label">Trio · Musique Latine</div>
@@ -31,6 +32,11 @@
           <p>Avec finesse et créativité, <strong style="color:var(--gold);">Trio Sancocho</strong> revisite le concept de piano bar en le plaçant sous le signe du soleil, du rythme et de l'élégance — autant d'ingrédients qui ont fait de longue date le succès de la musique latine !</p>
           <p>Retrouvez la pureté du piano acoustique et les plaisirs de la musique improvisée autour d'un répertoire original qui vous fera voyager de Colombie (Cumbia) à New York (Salsa, Latin jazz), en passant par le Brésil (Bossa), Saint-Domingue (Meringue) et, bien sûr, Cuba et les grands classiques de sa musique populaire (Danzón, Chachachá, Bolero, Son).</p>
           <p>Ce projet, ouvert et évolutif, est servi par trois musiciens expérimentés, aussi complices que complémentaires. <em style="color:var(--text-muted);">Léger et fin à l'oreille, Trio Sancocho se déguste comme un bon champagne et en toutes circonstances.</em></p>
+          
+          <div class="audio-player">
+            <div class="audio-player-title">♪ Écouter</div>
+            <div id="group-audio-player" data-folder="sancocho"></div>
+          </div>
           <div class="groupe-videos">
             <h3>Vidéos</h3>
             <div class="video-embed">
@@ -40,7 +46,7 @@
         </div>
         <div>
           <div class="groupe-photos">
-            <img src="images/sancocho.jpeg" alt="Trio Sancocho" class="photo-wide">
+            <img src="images/sancocho.jpg" alt="Trio Sancocho" class="photo-wide">
             <img src="images/sancocho-cover.jpg" alt="Trio Sancocho pochette">
           </div>
         </div>
@@ -48,6 +54,6 @@
     </div>
   </section>
   <footer id="footer"><div class="container"><div class="footer-top"><div class="footer-logo">Gwenaël Ollivier</div><nav class="footer-nav"><a href="biographie.html">Biographie</a><a href="groupes.html">Groupes</a><a href="galerie.html">Galerie</a><a href="dates.html">Prochaines dates</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><p>© 2025 Gwenaël Ollivier</p></div></div></footer>
-  <script src="script.js"></script>
+  <script src="script.js"></script><script src="audio-player.js"></script>
 </body>
 </html>

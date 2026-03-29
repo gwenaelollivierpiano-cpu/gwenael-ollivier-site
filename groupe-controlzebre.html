@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Control Zèbre — Gwenaël Ollivier</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Zèbre — Gwenaël Ollivier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
+</head>
 <body>
   <nav id="navbar"><div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
     <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -18,14 +22,22 @@
         <p>Formé de deux drôles de zèbres proposant des compositions originales et réunissant subtilement des ingrédients aussi variés que les Cumbias colombiennes ou les Sirbas roumaines, ce duo nourri du bon vieux <strong style="color:var(--gold);">swing des années 30</strong> nous invite à chaque concert à partir en safari pour découvrir d'incroyables paysages multicolores.</p>
         <p>Accrochez-vous bien aux oreilles de l'animal à rayures et vous repartirez de ce voyage poético-ludique avec un large sourire, et quelques coups de soleil !</p>
         <p>Formation mobile avec <strong style="color:var(--gold);">piano acoustique et batterie portative originale</strong> — concerts intérieur et extérieur. 2 albums : <em>"Radio Savane"</em> & <em>"Control Zèbre"</em>.</p>
+        <div class="audio-player">
+          <div class="audio-player-title">♪ Écouter Control Zèbre</div>
+          <div id="group-audio-player" data-folder="controlzebre"></div>
+        </div>
+        <div class="groupe-videos">
+          <h3>Vidéos</h3>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/kWe9mT4LWXw" title="Control Zèbre" allowfullscreen></iframe></div>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/BSZLiHiBkL4" title="Control Zèbre" allowfullscreen></iframe></div>
+        </div>
       </div>
       <div><div class="groupe-photos">
         <img src="images/controlzebre.jpg" alt="Control Zèbre" class="photo-wide">
-        <img src="images/controlzebre2.jpeg" alt="Control Zèbre concert">
-        <img src="images/controlzebre3.jpg" alt="Control Zèbre piano">
+        <img src="images/controlzebre2.jpg" alt="Control Zèbre concert">
       </div></div>
     </div>
   </div></section>
   <footer id="footer"><div class="container"><div class="footer-top"><div class="footer-logo">Gwenaël Ollivier</div><nav class="footer-nav"><a href="biographie.html">Biographie</a><a href="groupes.html">Groupes</a><a href="galerie.html">Galerie</a><a href="dates.html">Prochaines dates</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><p>© 2025 Gwenaël Ollivier</p></div></div></footer>
-  <script src="script.js"></script>
+  <script src="script.js"></script><script src="audio-player.js"></script>
 </body></html>

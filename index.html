@@ -6,6 +6,7 @@
   <title>Gwenaël Ollivier — Pianiste Jazz</title>
   <meta name="description" content="Gwenaël Ollivier, pianiste voyageur. Jazz, swing, musique latine, chanson française et compositions originales.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
 </head>
 <body>
 
@@ -92,6 +93,27 @@
     </div>
   </section>
 
+  <!-- Lecteur global -->
+  <section style="padding:3rem 0;background:var(--bg);border-top:1px solid var(--border);">
+    <div class="container" style="text-align:center;">
+      <div class="section-label" style="margin-bottom:1.5rem;">Musique</div>
+      <button class="global-player-btn" id="globalPlayerBtn">
+        <span class="btn-icon">▶</span>
+        Écouter la musique de Gwenaël
+      </button>
+    </div>
+  </section>
+
+  <!-- Overlay lecteur global -->
+  <div class="global-player-overlay" id="globalPlayerOverlay">
+    <div class="global-player-modal">
+      <button class="global-player-close" id="globalPlayerClose">×</button>
+      <h2 style="font-family:var(--font-title);font-size:1.8rem;color:var(--cream);margin-bottom:1.5rem;font-weight:400;">♪ Écouter</h2>
+      <div class="global-player-tabs" id="globalPlayerTabs"></div>
+      <div id="globalPlayerBody"></div>
+    </div>
+  </div>
+
   <!-- Citation -->
   <section class="quote-section">
     <div class="container">
@@ -124,5 +146,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="audio-player.js"></script>
 </body>
 </html>

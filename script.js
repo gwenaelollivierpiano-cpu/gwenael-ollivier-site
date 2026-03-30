@@ -142,6 +142,7 @@ function buildDateItem(ev) {
   const month  = MOIS[start.getMonth()];
   const year   = start.getFullYear();
   const jour   = JOURS[start.getDay()];
+  const heure  = formatHeure(ev.start.dateTime);
   const title  = formatTitle(ev.summary);
   const lieu   = ev.location ? formatTitle(ev.location) : '';
   const desc   = ev.description ? formatTitle(ev.description) : '';
@@ -153,6 +154,7 @@ function buildDateItem(ev) {
       </div>
       <div class="date-info">
         <h3>${title}</h3>
+        ${heure ? `<div class="lieu" style="color:var(--gold);font-size:0.8rem;margin-bottom:0.3rem;">🕐 ${jour} ${heure}</div>` : ''}
         ${lieu  ? `<div class="lieu">📍 ${lieu}</div>` : ''}
         ${desc  ? `<div class="groupe-tag">${desc}</div>` : ''}
       </div>

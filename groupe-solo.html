@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano Solo — Gwenaël Ollivier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
+    <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="biographie.html">Biographie</a></li>
+      <li><a href="groupes.html">Groupes</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="dates.html">Prochaines dates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="groupe-hero">
+    <img src="images/bio-main.jpg" alt="Gwenaël Ollivier — Piano Solo">
+    <div class="groupe-hero-overlay"></div>
+    <div class="groupe-hero-content">
+      <div class="label">Solo · Piano</div>
+      <h1>Piano Solo</h1>
+    </div>
+  </div>
+
+  <section class="groupe-content">
+    <div class="container">
+      <a href="groupes.html" class="back-link">← Retour aux groupes</a>
+      <div class="groupe-content-grid">
+        <div class="groupe-text">
+          <p>Du swing stride des années 30, aux valses, aux ballades sophistiquées, en passant par des bossas novas ou des danzóns, un son élégant tantôt proche du classique, tantôt tropical, s'échappe du piano en nous transportant vers des horizons lointains et envoûtants.</p>
+          <p style="color:var(--text-muted);font-style:italic;">Jazz · Latin · Cubain · Brésilien · Valses · Chanson Française · Musique des Balkans — au choix !</p>
+
+          <div class="audio-player" style="margin-top:2rem;">
+            <div class="audio-player-title">♪ Écouter Piano Solo</div>
+            <div id="group-audio-player" data-folder="piano-solo"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="groupe-photos">
+            <img src="images/bio-main.jpg" alt="Gwenaël Ollivier au piano" class="photo-wide">
+            <img src="images/galerie-smoking.jpg" alt="Gwenaël Ollivier en concert">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Gwenaël Ollivier</div>
+        <nav class="footer-nav">
+          <a href="biographie.html">Biographie</a>
+          <a href="groupes.html">Groupes</a>
+          <a href="galerie.html">Galerie</a>
+          <a href="dates.html">Prochaines dates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Gwenaël Ollivier — Tous droits réservés</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="audio-player.js"></script>
+</body>
+</html>

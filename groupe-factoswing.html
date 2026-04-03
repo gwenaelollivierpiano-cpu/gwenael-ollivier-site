@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factoswing — Gwenaël Ollivier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio-player.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html">G<span class="logo-dot">·</span>O</a></div>
+    <button class="nav-burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="biographie.html">Biographie</a></li>
+      <li><a href="groupes.html">Groupes</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="dates.html">Prochaines dates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="groupe-hero" style="background:var(--bg3);">
+    <div class="groupe-hero-overlay"></div>
+    <div class="groupe-hero-content">
+      <div class="label">Quartet · Swing Manouche</div>
+      <h1>Factoswing</h1>
+    </div>
+  </div>
+
+  <section class="groupe-content">
+    <div class="container">
+      <a href="groupes.html" class="back-link">← Retour aux groupes</a>
+      <div class="groupe-content-grid">
+        <div class="groupe-text">
+          <p>Factoswing est un groupe de swing parisien qui fait revivre l'énergie élégante et chaleureuse du jazz manouche et du swing classique. Mené par une formation acoustique raffinée, le groupe propose une musique vivante, généreuse et conviviale, idéale pour accompagner des concerts, soirées privées, événements culturels ou moments festifs.</p>
+          <p>Au piano, <strong style="color:var(--gold);">Gwen Ollivier</strong> apporte une touche harmonique sensible et inventive, tandis que la guitare de <strong style="color:var(--gold);">Romain Constant</strong> et la clarinette de <strong style="color:var(--gold);">Sylvain Hamel</strong> installent un swing fluide, précis et inspiré. À la contrebasse, <strong style="color:var(--gold);">Laurent Le Gall</strong> soutient l'ensemble avec un tempo solide et un sens du swing remarquable, donnant au groupe une assise rythmique souple, élégante et entraînante.</p>
+          <p>Ensemble, les musiciens créent une ambiance à la fois authentique et actuelle, entre élégance, énergie et plaisir du jeu.</p>
+
+          <div class="audio-player" style="margin-top:2rem;">
+            <div class="audio-player-title">♪ Écouter Factoswing</div>
+            <div id="group-audio-player" data-folder="factoswing"></div>
+          </div>
+
+          <div class="groupe-videos">
+            <h3>Vidéos</h3>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/TGD8br4Bios" title="Factoswing" allowfullscreen></iframe></div>
+            <div class="video-embed"><iframe src="https://www.youtube.com/embed/fXdr3Ut2PKo" title="Factoswing" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="background:var(--bg3);border:1px solid var(--border2);aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem;text-align:center;">
+            <div style="font-size:4rem;opacity:0.4;">♪</div>
+            <p style="font-family:var(--font-title);font-style:italic;color:var(--text-muted);font-size:1rem;">Piano · Guitare · Clarinette · Contrebasse</p>
+            <p style="font-size:0.8rem;color:var(--border2);">Photo à venir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Gwenaël Ollivier</div>
+        <nav class="footer-nav">
+          <a href="biographie.html">Biographie</a>
+          <a href="groupes.html">Groupes</a>
+          <a href="galerie.html">Galerie</a>
+          <a href="dates.html">Prochaines dates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Gwenaël Ollivier — Tous droits réservés</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="audio-player.js"></script>
+</body>
+</html>
